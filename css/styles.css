@@ -1,0 +1,16 @@
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#displayRow {
+  margin-top: 40px;
+}
+#availableHeader {
+  text-align: center;
+}
+#animalDisplay {
+  text-align: center;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: grey;
+}
