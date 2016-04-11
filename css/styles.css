@@ -25,6 +25,7 @@ body {
 .petform {
   text-align: center;
 }
+
 .animalInfo {
   text-align: left;
 }
@@ -35,4 +36,12 @@ img {
   height: 200%;
   width: 100%;
   display: inline;
+
+ul#animalList{
+  list-style: none;
+}
+
+.clickable{
+  color: blue;
+
 }
