@@ -9,52 +9,79 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/scripts.js" type="javascript"></script>
-  <script src="js/jquery-1.12.3.js" type="text/jQuery"></script>
+
+  <script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+  <script src="js/my.js" type="text/javascript"></script>
 </head>
 <body>
   <h1>Pet To-Go</h1>
   <div id="displayRow" class="row">
     <div id="availableHeader" class="col-xs-12">
-      <h3>Here are the pets available for adoption!</h3>
-      <div id="animalDisplay" class="col-xs-6 col-xs-offset-3">
+
+      <div id="animalDisplayList" class="col-xs-6 col-xs-offset-3">
+        <h3>Here are the pets available for adoption!</h3>
         <ul id='animalList'>
         </ul>
+      </div>
+      <div id="animalDisplayWindow" class="col-xs-6 col-xs-offset-3">
+        <div class="row">
+          <div class="col-xs-3">
+            <p class="animalInfo" id="animalName">
+            </p>
+            <p id="animalAge">
+            </p>
+            <p class="animalInfo" id="animalBreed">
+            </p>
+            <p class="animalInfo" id="animalColor">
+            </p>
+            <p class="animalInfo"id="animalSpecies">
+            </p>
+            <p class="animalInfo"id="animalGender">
+            </p>
+          </div>
+          <div class="col-xs-7 col-xs-offset-1" id="animalPic">
+          </div>
+        </div>
+        <div class="row">
+          <p class="col-xs-12 animalInfo2"id="animalStatus">
+
+          </p>
+        </div>
       </div>
     </div>
   </div>
   <form class="petForm">
-      <div class="row">
-        <div class="form-group nameform col-xs-4">
-          <label for="name">What's the animal's name?</label>
-          <input type="text" class="form-control name">
-        </div>
-        <div class="form-group speciesform col-xs-4">
-          <label for="species">What type of animal is it?</label>
-          <input type="text" class="form-control species">
-        </div>
+    <div class="row">
+      <div class="form-group nameform col-xs-4">
+        <label for="name">What's the animal's name?</label>
+        <input type="text" class="form-control name">
       </div>
-      <div class="row">
-        <div class="form-group breedform col-xs-4">
-          <label for="breed">Do you know the breed?</label>
-          <input type="text" class="form-control breed">
-        </div>
-        <div class="form-group colorform col-xs-4">
-          <label for="color">what color is it?</label>
-          <input type="text" class="form-control color">
-        </div>
+      <div class="form-group speciesform col-xs-4">
+        <label for="species">What type of animal is it?</label>
+        <input type="text" class="form-control species">
       </div>
-      <div class="row">
-        <div class="form-group ageform col-xs-4">
-          <label for="age">How old?</label>
-          <input type="text" class="form-control age">
-        </div>
-        <div class="form-group gender col-xs-4">
-          <label class="radio-inline"><input type="radio" name="optradio">Male</label>
-          <label class="radio-inline"><input type="radio" name="optradio">Female</label>
-        </div>
+    </div>
+    <div class="row">
+      <div class="form-group breedform col-xs-4">
+        <label for="breed">Do you know the breed?</label>
+        <input type="text" class="form-control breed">
       </div>
-      <button type="submit" id="adoptionSubmit" class="btn button-info">Put this animal up for adoption</button>
-    </form>
+      <div class="form-group colorform col-xs-4">
+        <label for="color">what color is it?</label>
+        <input type="text" class="form-control color">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group ageform col-xs-4">
+        <label for="age">How old?</label>
+        <input type="text" class="form-control age">
+      </div>
+      <div class="form-group gender col-xs-4">
+        <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+      </div>
+    </div>
+    <button type="submit" id="adoptionSubmit" class="btn button-info">Put this animal up for adoption</button>
+  </form>
 </body>
 </html>

@@ -4,12 +4,15 @@ body {
 }
 #displayRow {
   margin-top: 40px;
+}
+#animalDisplayWindow{
   display: none;
 }
 #availableHeader {
   text-align: center;
 }
-#animalDisplay {
+#animalDisplayList {
+  display: none;
   text-align: center;
   border-style: solid;
   border-radius: 1px;
@@ -21,4 +24,15 @@ body {
 }
 .petform {
   text-align: center;
+}
+.animalInfo {
+  text-align: left;
+}
+.animalInfo2{
+  text-align: center;
+}
+img {
+  height: 200%;
+  width: 100%;
+  display: inline;
 }
