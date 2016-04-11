@@ -22,3 +22,11 @@ body {
 .petform {
   text-align: center;
 }
+
+ul#animalList{
+    list-style: none;
+}
+
+.clickable{
+  color: blue;
+}
